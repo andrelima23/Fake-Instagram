@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+
+#root {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    width: 935px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#l {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#r {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative
+}
+
+#login {
+    width: 350px;
+    height: 350px;
+    top: 100px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    align-items: center;
+    position: absolute;
+    left: 27px;
+    top: 175px;
+}
+
+#instagram {
+    width: 175px;
+    height: 50px;
+    background-image: url(./src/img/ig.png);
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    overflow: hidden;
+    text-indent: 130%;
+    display: flex;
+    position: relative;
+    top: 15px;
+}
+
+#imgProfile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#animPhone {
+    width: 380px;
+    height: 600px;
+    margin-right: 0;
+    background-image: url(./src/img/animCelular.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+#btnLogin {
+    width: 250px;
+    height: 30px;
+    background-color: #0788f1;
+    color: white;
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#btnLogin:hover {
+    background-color: #1978c5;
+}
+
+#btnChangeAcc {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #0788f1;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.changeAcc {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    display: inline;
+}
+
+#donwloadApp {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    position:absolute;
+    bottom: 20px;
+    justify-content: space-between;
+    display: none;
+    background-color: transparent;
+}
+
+#donwload01, #donwload02 {
+    background-color: transparent;
+    color:transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#store {
+    width: auto;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+/* media queries */
+
+@media (max-width: 650px) {
+    #l {
+        display:none;
+    }
+    
+    #r {
+        width: 355px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #login {
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        top: 150px;
+        margin: auto;
+    }
+
+    #donwloadApp {
+        width: 350px;
+        height: 50px;
+        display: flex;
+        position:absolute;
+        bottom: 20px;
+        justify-content: space-between;
+        display: flex
+    }
+
+    
+    
+}
